@@ -11,10 +11,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <h1 class="navbar-brand">Minha Loja</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <h1 class="navbar-brand">Cacau show</h1>
+
+                <button 
+                    type="button" 
+                    class="navbar-toggler" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu"
+                >
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -32,47 +39,81 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Bem-Vindo a minha loja</h2>
-            <p>Os melhores produtos com os melhores preços</p>
+        <section class="bg-secondary text-white text-center py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold">Bem-Vindo a minha loja</h2>
+                <p class="lead">Os melhores produtos com os melhores preços</p>
+            </div>
         </section>
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
-            <article>
-                <!-- Altura  - height -->
-                <!-- Largura - width -->
-                <img 
-                    width="200"
-                    src="https://static.itdg.com.br/images/1200-675/aa29d53e9ac146ceac698d360223f83d/chocolate-branco.jpg" 
-                    alt="chocolate-branco"
-                >
-                <h3>Chocolate branco</h3>
-                <p>O melhor chocolate</p>
-                <span>R$ 49,90</span>
-                <button>Comprar</button>
-            </article>
-            <article>
-                <img
-                    width="200" 
-                    src="https://dmvfarma.vtexassets.com/arquivos/ids/263437-800-auto?v=638700649509230000&width=800&height=auto&aspect=true" 
-                    alt="chocolate-caro"
-                >
-                <h3>Chocolate Lindit</h3>
-                <p>Chocolate muito bom mas caro</p>
-                <span>R$ 89,90</span>
-                <button>Comprar</button>
-            </article>
-            <article>
-                <img 
-                    width="200"
-                    src="https://docemalu.vtexassets.com/arquivos/ids/5365642/7ca71d72da8db632845d1de0eb737d824fa9b3d5.jpg?v=639021146214230000" 
-                    alt="chocolate-ao-leite"
-                >
-                <h3>Chocolate ao Leite</h3>
-                <p>O mais normal</p>
-                <span>R$ 19,90</span>
-                <button>Comprar</button>
-            </article>
+
+        <section id="produtos" class="container my-5">
+            <h2 class="text-center mb-4">Nossos Produtos</h2>
+            <div class="row g-2">
+                <article class="card col-12 col-md-6 col-lg-4 col-xl-3" >
+                    <img 
+                        src="https://static.itdg.com.br/images/1200-675/aa29d53e9ac146ceac698d360223f83d/chocolate-branco.jpg" 
+                        alt="chocolate-branco"
+                    >
+                    <div class="card-body text-center flex-column d-flex justify-content-between">
+                        <div>
+                            <h3 class="card-title">Chocolate branco</h3>
+                            <p class="card-text">O melhor chocolate</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>R$ 49,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img
+                        src="https://dmvfarma.vtexassets.com/arquivos/ids/263437-800-auto?v=638700649509230000&width=800&height=auto&aspect=true" 
+                        alt="chocolate-caro"
+                    >
+                    <div class="d-flex card-body text-center flex-column justify-content-between">
+                        <div>
+                            <h3 class="card-title">Chocolate caro</h3>
+                            <p class="card-text">Chocolate muito bom mas caro</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>R$ 89,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img 
+                        src="https://docemalu.vtexassets.com/arquivos/ids/5365642/7ca71d72da8db632845d1de0eb737d824fa9b3d5.jpg?v=639021146214230000" 
+                        alt="chocolate-ao-leite"
+                    >
+                    <div class="d-flex card-body text-center flex-column justify-content-between">
+                        <div>
+                            <h3 class="card-title">Chocolate ao Leite</h3>
+                            <p class="card-text">O mais normal</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <span>R$ 19,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+                                <article class="card col-12 col-md-6 col-lg-4 col-xl-3">
+                    <img 
+                        src="https://lojasadoce.cdn.magazord.com.br/img/2024/07/produto/3608/barra-de-chocolate-nestle-classico-ao-leite.jpg?ims=800x800" 
+                        alt="chocolate-ao-leite"
+                    >
+                    <div class="d-flex card-body text-center flex-column justify-content-between">
+                        <div>
+                            <h3 class="card-title">Chocolate ao Leite da Nestlé</h3>
+                            <p class="card-text">O mais normal existente</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <span>R$ 15,90</span>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="sobre">
             <h2>Sobre Nós</h2>
@@ -138,6 +179,7 @@
         <address>Rua dos Chocolates, 123 - Montes Claros/MG</address>
         <p>&copy; 2026 Feito com amor por Durvaldo </p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
